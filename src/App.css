@@ -1,11 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  background-image: linear-gradient(79deg, yellow, #000000 48%, green);
 }
 
 .App-logo {
@@ -18,20 +12,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 .App-header {
   background-color: #282c34;
@@ -47,21 +27,6 @@ code {
 .App-link {
   color: #61dafb;
 }
-
-.auth-form-container, .login-form, .register-form {
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 600px) {
-  .auth-form-container {
-      padding: 5rem;
-      border: 1px solid white;
-      border-radius: 10px;
-      margin: 0.5rem;
-  }
-}
-
 
 @keyframes App-logo-spin {
   from {
@@ -92,10 +57,32 @@ code {
 
 .nav-bar a {
   text-decoration: none;
-  color: yellowgreen
+  color: #ffffff;
 }
 .nav-bar a:hover {
   text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  padding: 40px;
+  font-size: 14px;
+  color: #000000;
+  position:absolute;
+  justify-content: center;
+  left:0;
+  bottom:0;
+  right:0;
+  padding-bottom:60px;
+
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
 }
 
 .content {
@@ -186,6 +173,13 @@ code {
   cursor: pointer;
 }
 
+.required {
+  color: red;
+}
+
+.success {
+  color: green;
+}
 
 .auth-form-container, .login-form, .register-form {
   display: flex;
@@ -193,12 +187,12 @@ code {
 }
 
 @media screen and (min-width: 600px) {
-  .auth-form-container {
-    padding: 5rem;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0.5rem;
-  }
+.auth-form-container {
+  padding: 5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
 }
 
 label {
@@ -233,16 +227,9 @@ button {
   color: black;
   text-decoration: underline;
   width: 12rem;
-  margin: auto;
+    margin: auto;
   display: block;
 }
-
-.link-btn {
-  background: none;
-  color: white;
-  text-decoration: underline;
-}
-
 
 .chat { 
   margin-left: 20%;
@@ -250,7 +237,6 @@ button {
   width: 20%;
   float: right;
 } 
-
 .container {
   display: flex;
   align-items: center;
@@ -265,23 +251,62 @@ button {
   /* button styles go here */
 }
 
+.teacherDashboard {
+  display: flex;
+  align-items: center;
+}
+
 .home {
   display: flex;
   align-items: center;
 }
 
-.red {
-  color: red;
+.teacherDashboardDisplay {
+  display: flex;
+  align-items: center;
 }
 
-.blue {
-  color: blue;
+.student5text {
+  display: flex;
+  align-items: center;
 }
 
-.required {
-  color: red;
+.teacherMathDisplay {
+  display: flex;
+  align-items: center;
 }
 
-.success {
-  color: green;
+.teacherEnglishDisplay {
+  display: flex;
+  align-items: center;
+}
+
+.teacherScienceDisplay {
+  display: flex;
+  align-items: center;
+}
+
+.studentDashboard {
+  float: left;
+}
+
+.welcome {
+  .centered {
+    position: fixed;
+    width: 41%;
+    text-align: center;
+    top: 5%;
+    left: 50%;
+    padding: 20px;
+    margin-left: -20%;
+}
+}
+.sign-in {
+  position: fixed;
+  width: 40%;
+  text-align: center;
+  top: 25%;
+  left: 49%;
+  padding: 20px;
+  transform: translate(-50%, 0);
 }

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+/* import React, {useState} from "react";
 
 export const Register = (props) => {
     const [username, setUsername] = useState('');
@@ -27,4 +27,4 @@ export const Register = (props) => {
     </div>
     )
 }
-export default Register
+export default Register */
