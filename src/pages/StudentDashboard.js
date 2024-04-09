@@ -1,6 +1,11 @@
 import { Box } from '@mui/material';
 import React from 'react'
 import '../App.css'
+
+const data = [
+    { name: "John Doe", attention: "87%"}
+]
+
 export default function StudentDashboard() {
     return (
         <div>
@@ -25,13 +30,13 @@ export default function StudentDashboard() {
                 bgcolor="white" p={30}>
                 Box for Chat
             </Box>
-        <div class="container">
+        <div class="chatContainer">
             <form>
                 <input type="text" id="chatInput" placeholder="Enter Text Here" name="chatInput"/>
             </form>
             <button>Submit</button>
         </div>
-        </div>    
+        </div>  
         </div>
     );
 }

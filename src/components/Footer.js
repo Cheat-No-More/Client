@@ -1,3 +1,4 @@
+/*
 function Footer() {
     return (
         <div className="footer">
@@ -7,3 +8,4 @@ function Footer() {
 }
 
 export default Footer
+*/

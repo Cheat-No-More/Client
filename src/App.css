@@ -237,7 +237,7 @@ button {
   width: 20%;
   float: right;
 } 
-.container {
+.chatContainer {
   display: flex;
   align-items: center;
 }
@@ -309,4 +309,19 @@ button {
   left: 49%;
   padding: 20px;
   transform: translate(-50%, 0);
+}
+table {
+  border: 2px solid forestgreen;
+  width: 800px;
+  height: 200px;
+  position: absolute;
+  bottom:0px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  text-align: center;
 }
