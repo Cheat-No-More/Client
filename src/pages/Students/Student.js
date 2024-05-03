@@ -1,6 +1,14 @@
 import { Box } from '@mui/material';
+import Webcam from "react-webcam";
+import {useRef} from 'react';
+
+
 
 export default function Student() {
+
+
+const webRef=useRef(null)
+
     return (
         <div>
         <h1>Student Dashboard</h1>
@@ -10,10 +18,9 @@ export default function Student() {
             width: '30%',
             float: 'left'
         }} >
-            <Box color="white"
-                bgcolor="black" p={30}>
-                Box for Camera
-            </Box>
+            <div className="App">
+                <Webcam refs={webRef}/>
+            </div>
         </div>    
         <div classname="chat" style={{ 
             marginRight: '10%',
